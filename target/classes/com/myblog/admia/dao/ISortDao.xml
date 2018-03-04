@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myblog.admia.dao.ISortDao">
+	<insert id="addsort" useGeneratedKeys="true" keyProperty="sort_article_id" >  
+   INSERT INTO article_sort(sort_article_name) VALUES (#{sort_article_name}) 
+    </insert>
+</mapper>
